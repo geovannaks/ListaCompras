@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CFED54999D81D034E71C200 /* Pods_ListaCompras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27524330F6FC5E493B524E81 /* Pods_ListaCompras.framework */; };
 		9AD43E22273AB86500A051B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD43E21273AB86500A051B1 /* AppDelegate.swift */; };
 		9AD43E24273AB86500A051B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD43E23273AB86500A051B1 /* SceneDelegate.swift */; };
 		9AD43E26273AB86500A051B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD43E25273AB86500A051B1 /* ViewController.swift */; };
-		9AD43E29273AB86500A051B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD43E27273AB86500A051B1 /* Main.storyboard */; };
 		9AD43E2C273AB86500A051B1 /* ListaCompras.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AD43E2A273AB86500A051B1 /* ListaCompras.xcdatamodeld */; };
 		9AD43E2E273AB86700A051B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD43E2D273AB86700A051B1 /* Assets.xcassets */; };
 		9AD43E31273AB86700A051B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD43E2F273AB86700A051B1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27524330F6FC5E493B524E81 /* Pods_ListaCompras.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListaCompras.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D12F675E4D5555B10377C08 /* Pods-ListaCompras.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaCompras.release.xcconfig"; path = "Target Support Files/Pods-ListaCompras/Pods-ListaCompras.release.xcconfig"; sourceTree = "<group>"; };
 		9AD43E1E273AB86500A051B1 /* ListaCompras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListaCompras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD43E21273AB86500A051B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AD43E23273AB86500A051B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9AD43E25273AB86500A051B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9AD43E28273AB86500A051B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AD43E2B273AB86500A051B1 /* ListaCompras.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ListaCompras.xcdatamodel; sourceTree = "<group>"; };
 		9AD43E2D273AB86700A051B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AD43E30273AB86700A051B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AD43E32273AB86700A051B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB934CB52F4D2EB50BF572B /* Pods-ListaCompras.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaCompras.debug.xcconfig"; path = "Target Support Files/Pods-ListaCompras/Pods-ListaCompras.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CFED54999D81D034E71C200 /* Pods_ListaCompras.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,8 @@
 			children = (
 				9AD43E20273AB86500A051B1 /* ListaCompras */,
 				9AD43E1F273AB86500A051B1 /* Products */,
+				C69B50F80A1A6096213A8915 /* Pods */,
+				A0D28A6CCD6D5CEE3589B447 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,13 +66,30 @@
 				9AD43E21273AB86500A051B1 /* AppDelegate.swift */,
 				9AD43E23273AB86500A051B1 /* SceneDelegate.swift */,
 				9AD43E25273AB86500A051B1 /* ViewController.swift */,
-				9AD43E27273AB86500A051B1 /* Main.storyboard */,
 				9AD43E2D273AB86700A051B1 /* Assets.xcassets */,
 				9AD43E2F273AB86700A051B1 /* LaunchScreen.storyboard */,
 				9AD43E32273AB86700A051B1 /* Info.plist */,
 				9AD43E2A273AB86500A051B1 /* ListaCompras.xcdatamodeld */,
 			);
 			path = ListaCompras;
+			sourceTree = "<group>";
+		};
+		A0D28A6CCD6D5CEE3589B447 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27524330F6FC5E493B524E81 /* Pods_ListaCompras.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C69B50F80A1A6096213A8915 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFB934CB52F4D2EB50BF572B /* Pods-ListaCompras.debug.xcconfig */,
+				2D12F675E4D5555B10377C08 /* Pods-ListaCompras.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AD43E35273AB86700A051B1 /* Build configuration list for PBXNativeTarget "ListaCompras" */;
 			buildPhases = (
+				DF2763AB6FA42A384FAA3AF2 /* [CP] Check Pods Manifest.lock */,
 				9AD43E1A273AB86500A051B1 /* Sources */,
 				9AD43E1B273AB86500A051B1 /* Frameworks */,
 				9AD43E1C273AB86500A051B1 /* Resources */,
+				C357B1A2C496F8A09848587A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +154,52 @@
 			files = (
 				9AD43E31273AB86700A051B1 /* LaunchScreen.storyboard in Resources */,
 				9AD43E2E273AB86700A051B1 /* Assets.xcassets in Resources */,
-				9AD43E29273AB86500A051B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C357B1A2C496F8A09848587A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListaCompras/Pods-ListaCompras-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListaCompras/Pods-ListaCompras-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ListaCompras/Pods-ListaCompras-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF2763AB6FA42A384FAA3AF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ListaCompras-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9AD43E1A273AB86500A051B1 /* Sources */ = {
@@ -151,14 +216,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9AD43E27273AB86500A051B1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9AD43E28273AB86500A051B1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9AD43E2F273AB86700A051B1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,16 +345,18 @@
 		};
 		9AD43E36273AB86700A051B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFB934CB52F4D2EB50BF572B /* Pods-ListaCompras.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HQJF9G685U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ListaCompras/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,16 +374,18 @@
 		};
 		9AD43E37273AB86700A051B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D12F675E4D5555B10377C08 /* Pods-ListaCompras.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HQJF9G685U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ListaCompras/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
