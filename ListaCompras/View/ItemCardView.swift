@@ -59,7 +59,7 @@ class ItemCardView: UIView {
         price.textAlignment = .left
         
         
-        let addButton: AddButton = .createButton()
+        let addButton: AddButton = .createButton(systemIcon: "plus")
         
         let stack = UIStackView(arrangedSubviews: [price, addButton])
         stack.axis = .horizontal

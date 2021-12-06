@@ -19,11 +19,11 @@ class AddButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    static func createButton() -> AddButton {
+    static func createButton(systemIcon: String) -> AddButton {
         let button = AddButton()
         let configuration = UIImage.SymbolConfiguration(font: UIFont.systemFont(ofSize: 25, weight: .bold))
         
-        button.setImage(UIImage(systemName: "plus", withConfiguration: configuration), for: .normal)
+        button.setImage(UIImage(systemName: systemIcon, withConfiguration: configuration), for: .normal)
         button.tintColor = .white
         button.backgroundColor = UIColor(named: "green")
         button.layer.cornerRadius = 17

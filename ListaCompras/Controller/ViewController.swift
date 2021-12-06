@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     private var itemCard : ItemCardView = .init()
+    private var cartItem : CartItem = .init()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,16 +23,22 @@ class ViewController: UIViewController {
     
     
     private func setupHierarchy(){
-        view.addSubview(itemCard)
+//        view.addSubview(itemCard)
+        view.addSubview(cartItem)
 
     }
     
     private func setupConstraints(){
-        itemCard.snp.makeConstraints { make in
+//        itemCard.snp.makeConstraints { make in
+//            make.top.equalToSuperview().offset(130)
+//            make.leading.equalToSuperview().offset(23)
+//        }
+    
+        cartItem.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(130)
             make.leading.equalToSuperview().offset(23)
         }
-    
+        
     }
 
 
