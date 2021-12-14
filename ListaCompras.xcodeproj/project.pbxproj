@@ -11,6 +11,7 @@
 		7A1D5FBC27566482000D7DE5 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D5FBB27566482000D7DE5 /* SearchCollectionViewCell.swift */; };
 		7A1D5FBE27566BA3000D7DE5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D5FBD27566BA3000D7DE5 /* Item.swift */; };
 		7A1D5FC027566C6E000D7DE5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D5FBF27566C6E000D7DE5 /* Model.swift */; };
+		2BB9CFAE27566527000F468D /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB9CFAD27566527000F468D /* CartItem.swift */; };
 		7A7869602743EC3C000A9944 /* ItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A78695F2743EC3C000A9944 /* ItemCardView.swift */; };
 		7A7869622743F3DB000A9944 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7869612743F3DB000A9944 /* AddButton.swift */; };
 		7CFED54999D81D034E71C200 /* Pods_ListaCompras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27524330F6FC5E493B524E81 /* Pods_ListaCompras.framework */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		27524330F6FC5E493B524E81 /* Pods_ListaCompras.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListaCompras.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB9CFAD27566527000F468D /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 		2D12F675E4D5555B10377C08 /* Pods-ListaCompras.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaCompras.release.xcconfig"; path = "Target Support Files/Pods-ListaCompras/Pods-ListaCompras.release.xcconfig"; sourceTree = "<group>"; };
 		7A1D5FB927566460000D7DE5 /* SearchCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollection.swift; sourceTree = "<group>"; };
 		7A1D5FBB27566482000D7DE5 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -62,6 +64,8 @@
 				7A1D5FB927566460000D7DE5 /* SearchCollection.swift */,
 				7A1D5FBB27566482000D7DE5 /* SearchCollectionViewCell.swift */,
 				7A1D5FB827566421000D7DE5 /* Controller */,
+				7A7869612743F3DB000A9944 /* AddButton.swift */,
+				2BB9CFAD27566527000F468D /* CartItem.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -265,6 +269,7 @@
 				9AD43E2C273AB86500A051B1 /* ListaCompras.xcdatamodeld in Sources */,
 				7A1D5FBC27566482000D7DE5 /* SearchCollectionViewCell.swift in Sources */,
 				7A1D5FBA27566460000D7DE5 /* SearchCollection.swift in Sources */,
+				2BB9CFAE27566527000F468D /* CartItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
