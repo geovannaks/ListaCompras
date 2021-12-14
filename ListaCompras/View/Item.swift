@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 struct Item: Identifiable {
-    var id: String
+    let id = UUID()
     let image: UIImage
     let name: String
     let price: Double
