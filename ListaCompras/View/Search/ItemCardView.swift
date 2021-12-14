@@ -9,6 +9,8 @@ import UIKit
 import SnapKit
 
 class ItemCardView: UIView {
+    
+    private var item : Item
 
     
     private lazy var card: UIView = {
@@ -24,7 +26,7 @@ class ItemCardView: UIView {
     
     private lazy var image: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(named: "ovos")
+        image.image = item.image
         image.contentMode = .scaleAspectFit
         
         return image
@@ -33,7 +35,7 @@ class ItemCardView: UIView {
     
     private lazy var productName : UILabel = {
         let name = UILabel()
-        name.text = "Egg"
+        name.text = item.name
         name.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         name.textColor = .black
         
@@ -42,7 +44,7 @@ class ItemCardView: UIView {
     
     private lazy var quantity: UILabel = {
         let quantity = UILabel()
-        quantity.text = "4 pcs, Price "
+        quantity.text = "\(item.quantity) \(item.measure)"
         quantity.font = UIFont.systemFont(ofSize: 14, weight: .medium)
         quantity.textColor = .systemGray2
         quantity.textAlignment = .left
@@ -53,7 +55,7 @@ class ItemCardView: UIView {
     
     private lazy var stack: UIStackView = {
         let price = UILabel()
-        price.text = "$ 1.99"
+        price.text = "\(item.price)"
         price.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         price.textColor = .black
         price.textAlignment = .left
@@ -68,9 +70,10 @@ class ItemCardView: UIView {
         return stack
     }()
     
-    
-    private override init(frame: CGRect) {
-        super.init(frame: frame)
+    init(itemCard: Item){
+        self.item = itemCard
+        super.init(frame: .zero)
+        
         setupHierarchy()
         setupConstraints()
         
