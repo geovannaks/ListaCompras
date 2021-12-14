@@ -17,6 +17,7 @@ class SearchCollectionViewCell: UICollectionViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         setupUI()
     }
 
@@ -38,7 +39,7 @@ private extension SearchCollectionViewCell {
 
 extension SearchCollectionViewCell {
     public func configure(itemCard: Item) {
-        item = ItemCardView(itemCard: itemCard)
+        item = ItemCardView(itemCard: itemCard, delegateItem: delegateItem)
         
         contentView.addSubview(item)
         item.isUserInteractionEnabled = false

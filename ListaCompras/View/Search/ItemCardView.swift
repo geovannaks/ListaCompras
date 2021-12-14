@@ -10,7 +10,9 @@ import SnapKit
 
 class ItemCardView: UIView {
     
+    
     private var item : Item
+    private var delegateItem: ItemDelegate
 
     
     private lazy var card: UIView = {
@@ -62,7 +64,7 @@ class ItemCardView: UIView {
         
         
         let addButton: AddButton = .createButton(systemIcon: "plus")
-        
+        addButton.addTarget(self, action: #selector(createItem(_sender:)), for: .touchUpInside)
         let stack = UIStackView(arrangedSubviews: [price, addButton])
         stack.axis = .horizontal
         stack.spacing = 46
@@ -70,8 +72,9 @@ class ItemCardView: UIView {
         return stack
     }()
     
-    init(itemCard: Item){
+    init(itemCard: Item, delegateItem: ItemDelegate){
         self.item = itemCard
+        self.delegateItem = delegateItem
         super.init(frame: .zero)
         
         setupHierarchy()
@@ -81,6 +84,11 @@ class ItemCardView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc
+    private func createItem (_sender: UIButton){
+        delegateItem.createNewItem(name: item.name, price: item.price, quantity: item.quantity, measure: item.measure, detail: item.detail, image: item.image)
     }
     
     private func setupHierarchy(){

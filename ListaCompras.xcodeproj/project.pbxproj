@@ -10,6 +10,7 @@
 		7A1D5FBA27566460000D7DE5 /* SearchCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D5FB927566460000D7DE5 /* SearchCollection.swift */; };
 		7A1D5FBC27566482000D7DE5 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D5FBB27566482000D7DE5 /* SearchCollectionViewCell.swift */; };
 		7A1D5FBE27566BA3000D7DE5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D5FBD27566BA3000D7DE5 /* Item.swift */; };
+		7A6DEDA72768CD1200CE34B0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6DEDA62768CD1200CE34B0 /* CloudKit.framework */; };
 		7A7028052768C937007EA787 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7028042768C937007EA787 /* CartItem.swift */; };
 		7A7028072768C974007EA787 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7028062768C974007EA787 /* Model.swift */; };
 		7A7869602743EC3C000A9944 /* ItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A78695F2743EC3C000A9944 /* ItemCardView.swift */; };
@@ -29,6 +30,8 @@
 		7A1D5FB927566460000D7DE5 /* SearchCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollection.swift; sourceTree = "<group>"; };
 		7A1D5FBB27566482000D7DE5 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		7A1D5FBD27566BA3000D7DE5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7A6DEDA52768CCFC00CE34B0 /* ListaCompras.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ListaCompras.entitlements; sourceTree = "<group>"; };
+		7A6DEDA62768CD1200CE34B0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		7A7028042768C937007EA787 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 		7A7028062768C974007EA787 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7A78695F2743EC3C000A9944 /* ItemCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardView.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CFED54999D81D034E71C200 /* Pods_ListaCompras.framework in Frameworks */,
+				7A6DEDA72768CD1200CE34B0 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +119,7 @@
 		9AD43E20273AB86500A051B1 /* ListaCompras */ = {
 			isa = PBXGroup;
 			children = (
+				7A6DEDA52768CCFC00CE34B0 /* ListaCompras.entitlements */,
 				7A78695D2743EBCA000A9944 /* View */,
 				7A78695E2743EBD0000A9944 /* Controller */,
 				9AD43E21273AB86500A051B1 /* AppDelegate.swift */,
@@ -130,6 +135,7 @@
 		A0D28A6CCD6D5CEE3589B447 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A6DEDA62768CD1200CE34B0 /* CloudKit.framework */,
 				27524330F6FC5E493B524E81 /* Pods_ListaCompras.framework */,
 			);
 			name = Frameworks;
@@ -408,9 +414,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ListaCompras/ListaCompras.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HQJF9G685U;
+				DEVELOPMENT_TEAM = 6JQBX9UWVN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ListaCompras/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -437,9 +444,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ListaCompras/ListaCompras.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HQJF9G685U;
+				DEVELOPMENT_TEAM = 6JQBX9UWVN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ListaCompras/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

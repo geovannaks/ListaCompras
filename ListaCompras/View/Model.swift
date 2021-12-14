@@ -10,7 +10,7 @@ import UIKit
 
 class Model: ObservableObject {
 
-    var item: [Item] = [Item(image: UIImage(named: "ovos")!, name: "Eggs", price: 1.99, quantity: 12, measure: "pcs", detail: "nao"),
+    var itens: [Item] = [Item(image: UIImage(named: "ovos")!, name: "Eggs", price: 1.99, quantity: 12, measure: "pcs", detail: "nao"),
         Item(image: UIImage(named: "ovos")!, name: "Eggs", price: 1.99, quantity: 12, measure: "pcs", detail: "nao"),
         Item(image: UIImage(named: "ovos")!, name: "Eggs", price: 1.99, quantity: 12, measure: "pcs", detail: "nao"),
         Item(image: UIImage(named: "ovos")!, name: "Eggs", price: 1.99, quantity: 12, measure: "pcs", detail: "nao")
