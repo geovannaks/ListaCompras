@@ -22,6 +22,7 @@
 		9AD43E2C273AB86500A051B1 /* ListaCompras.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AD43E2A273AB86500A051B1 /* ListaCompras.xcdatamodeld */; };
 		9AD43E2E273AB86700A051B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD43E2D273AB86700A051B1 /* Assets.xcassets */; };
 		9AD43E31273AB86700A051B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD43E2F273AB86700A051B1 /* LaunchScreen.storyboard */; };
+		C4B32329276997E2009E9B96 /* ItemConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B32328276997E2009E9B96 /* ItemConnection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		9AD43E2D273AB86700A051B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AD43E30273AB86700A051B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AD43E32273AB86700A051B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B32328276997E2009E9B96 /* ItemConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemConnection.swift; sourceTree = "<group>"; };
 		CFB934CB52F4D2EB50BF572B /* Pods-ListaCompras.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaCompras.debug.xcconfig"; path = "Target Support Files/Pods-ListaCompras/Pods-ListaCompras.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,15 +89,9 @@
 				7A7028062768C974007EA787 /* Model.swift */,
 				7A1D5FBD27566BA3000D7DE5 /* Item.swift */,
 				7A1D5FB727566405000D7DE5 /* Search */,
+				C4B32328276997E2009E9B96 /* ItemConnection.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		7A78695E2743EBD0000A9944 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		9AD43E15273AB86500A051B1 = {
@@ -121,7 +117,6 @@
 			children = (
 				7A6DEDA52768CCFC00CE34B0 /* ListaCompras.entitlements */,
 				7A78695D2743EBCA000A9944 /* View */,
-				7A78695E2743EBD0000A9944 /* Controller */,
 				9AD43E21273AB86500A051B1 /* AppDelegate.swift */,
 				9AD43E23273AB86500A051B1 /* SceneDelegate.swift */,
 				9AD43E2D273AB86700A051B1 /* Assets.xcassets */,
@@ -266,6 +261,7 @@
 			files = (
 				9AD43E26273AB86500A051B1 /* ViewController.swift in Sources */,
 				7A1D5FBE27566BA3000D7DE5 /* Item.swift in Sources */,
+				C4B32329276997E2009E9B96 /* ItemConnection.swift in Sources */,
 				7A7028052768C937007EA787 /* CartItem.swift in Sources */,
 				9AD43E22273AB86500A051B1 /* AppDelegate.swift in Sources */,
 				9AD43E24273AB86500A051B1 /* SceneDelegate.swift in Sources */,
@@ -417,7 +413,7 @@
 				CODE_SIGN_ENTITLEMENTS = ListaCompras/ListaCompras.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6JQBX9UWVN;
+				DEVELOPMENT_TEAM = HQJF9G685U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ListaCompras/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -430,7 +426,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = geovanna.ListaCompras;
+				PRODUCT_BUNDLE_IDENTIFIER = picolo.ListaCompras;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -447,7 +443,7 @@
 				CODE_SIGN_ENTITLEMENTS = ListaCompras/ListaCompras.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6JQBX9UWVN;
+				DEVELOPMENT_TEAM = HQJF9G685U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ListaCompras/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -460,7 +456,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = geovanna.ListaCompras;
+				PRODUCT_BUNDLE_IDENTIFIER = picolo.ListaCompras;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

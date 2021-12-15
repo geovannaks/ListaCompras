@@ -8,13 +8,11 @@
 import UIKit
 
 class SearchCollectionViewCell: UICollectionViewCell {
-    
-    
     private lazy var item = UIView()
+
     static let cellId = "CarouselCell"
 
     // MARK: - Initializer
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -28,28 +26,20 @@ class SearchCollectionViewCell: UICollectionViewCell {
 }
 
 // MARK: - Setups
-
 private extension SearchCollectionViewCell {
     func setupUI() {
         backgroundColor = .clear
     }
 }
 
-// MARK: - Public
-
+// MARK: - Publi
 extension SearchCollectionViewCell {
     public func configure(itemCard: Item) {
-        item = ItemCardView(itemCard: itemCard, delegateItem: delegateItem)
+        item = ItemCardView(itemCard: itemCard)
         
         contentView.addSubview(item)
-        item.isUserInteractionEnabled = false
         item.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
     }
-    
-//    public func identifyNFT(nft: NFT){
-//        nftSelected = nft
-//    }
-
 }

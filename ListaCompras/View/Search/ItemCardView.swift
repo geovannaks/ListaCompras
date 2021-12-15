@@ -9,11 +9,7 @@ import UIKit
 import SnapKit
 
 class ItemCardView: UIView {
-    
-    
     private var item : Item
-    private var delegateItem: ItemDelegate
-
     
     private lazy var card: UIView = {
         let card = UIView()
@@ -64,7 +60,8 @@ class ItemCardView: UIView {
         
         
         let addButton: AddButton = .createButton(systemIcon: "plus")
-        addButton.addTarget(self, action: #selector(createItem(_sender:)), for: .touchUpInside)
+        addButton.addTarget(self, action: #selector(createItem(sender:)), for: .touchUpInside)
+
         let stack = UIStackView(arrangedSubviews: [price, addButton])
         stack.axis = .horizontal
         stack.spacing = 46
@@ -72,9 +69,8 @@ class ItemCardView: UIView {
         return stack
     }()
     
-    init(itemCard: Item, delegateItem: ItemDelegate){
+    init(itemCard: Item){
         self.item = itemCard
-        self.delegateItem = delegateItem
         super.init(frame: .zero)
         
         setupHierarchy()
@@ -86,9 +82,10 @@ class ItemCardView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc
-    private func createItem (_sender: UIButton){
-        delegateItem.createNewItem(name: item.name, price: item.price, quantity: item.quantity, measure: item.measure, detail: item.detail, image: item.image)
+    @objc func createItem(sender: UIButton) {
+        ItemConnection.save(item: item) { res in
+            print("Resulted \(res)")
+        }
     }
     
     private func setupHierarchy(){
@@ -103,7 +100,7 @@ class ItemCardView: UIView {
     private func setupConstraints(){
         card.snp.makeConstraints { make in
             make.height.equalTo(248)
-            make.width.equalTo(174)
+            make.width.equalTo(170)
         }
         
         image.snp.makeConstraints { make in
@@ -125,15 +122,8 @@ class ItemCardView: UIView {
         
         stack.snp.makeConstraints { make in
             make.top.equalTo(productName.snp.bottom).offset(20)
-            make.leading.equalTo(card.snp.leading).offset(15)
-            make.trailing.equalTo(card.snp.trailing).offset(-15)
+            make.leading.equalTo(card.snp.leading).offset(20)
+            make.trailing.equalTo(card.snp.trailing).offset(-20)
         }
     }
-    
-    
-    
-    
-    
-    
-
 }
